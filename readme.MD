@@ -1,6 +1,6 @@
 # Code en Running your SpringBoot Application
 
-Run your application with class 'DemoApplication'
+Run your application with class 'DemoApplication' class
 Class 'Drink' contains the entities you're about to create
 Interface 'RestRepository' is needed for any CRUD operations for the partical table!
 
@@ -24,21 +24,15 @@ One annotation is able to create an whole entire API '@RepositoryRestResource'
 
 # TestCases
 
-See class 'DemoApplicationTests' for the unit tests
+See class 'RestAssuredTests' for the restAssured tests
+See class 'RestTemplateTests' for the restTemplate tests
 
 # Used Libraries:
 
 restTemplate
-
 restAssured
-
 mockMvc
 
-# Used e2e BDD TestCases with Karate
-karateGET.feature && karateCRUD.feature
-Start up your endpoint
-Run TestRunnerKarate.java
-See index.html in the genrated 'cucumber-report' directory
 
 # DevTools
 brew install maven >> to install maven
@@ -51,40 +45,4 @@ mvn test
 # PortCommands
 lsof -n -i4TCP:8000 (portnumber)
 kill -9 68453 (number is PID value from the list-command above)
-
-# Jenkins
-##Sample commands:
-####Install the latest LTS version: brew install jenkins-lts
-####Install a specific LTS version: brew install jenkins-lts@YOUR_VERSION
-####Start the Jenkins service: brew services start jenkins-lts
-####Stop the Jenkins service: brew services stop jenkins-lts
-####Restart the Jenkins service: brew services restart jenkins-lts
-####Update the Jenkins version: brew upgrade jenkins-lts
-###use for redirecting local: ngrok http 8080
-###http://d007-77-162-149-103.ngrok.io/github-webhook/ >>> enter in GitHub Webhook
-
--------------------------------------------------------------------------------------
-
-# meetUp 13-10-2021 - Topics
-#####starting the environment: 
-######endPoint
-######Github
-######Jenkins
-
-#####karate alternatives
-#####helper classes > unitTest
-#####karate config file
-#####suite-/feature-/scenario-run
-#####JSON body for data input
-#####Validations
-#####before&after steps
-#####pipeLine/GitHub/IntelliJ
-#####reporting: karate & cucumber
-#####parallel runs
-#####features pattern (calling each other)
-
-update
-
--------------------------------------------------------------------------------------
-
 

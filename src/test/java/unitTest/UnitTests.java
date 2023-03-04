@@ -2,7 +2,6 @@ package unitTest;
 
 import org.junit.Assert;
 import org.junit.Test;
-import runners.TestRunnerKarate;
 import utils.Key;
 import utils.TestDataGenerator;
 
@@ -76,9 +75,5 @@ public class UnitTests {
         Assert.assertTrue(number == "1234");
     }
 
-    @Test
-    public void karate() throws InterruptedException {
-        TestRunnerKarate.testParallel();
-    }
 
 }
