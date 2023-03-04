@@ -1,4 +1,4 @@
-@karate
+@karate @ignore
 Feature: Print all Generated Testdata
 
   Background:

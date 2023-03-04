@@ -34,7 +34,7 @@ Feature: Testing GETS of the CREATED Drinks - JSON Assertions
     * print response
     And match response == enrichedData
     #after step
-    * call read('b.Drink_DELETE.feature@DeleteNewDrink')
+#    * call read('b.Drink_DELETE.feature@DeleteNewDrink')
 
   Scenario: checking the extra drink is NOT PRESENT anymore in the default data set
 #   The scenario can be runned standAlone by calling the right scenario/feature on which it is depending

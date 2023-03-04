@@ -8,7 +8,7 @@ Feature: Testing DELETE of the CREATED Drinks
 
   @DeleteNewDrink
   Scenario: deleting extra set of data
-    Given path 'drinks/' + 4
+    Given path 'drinks/' + 2
     When method delete
 #    Then status 204
 
